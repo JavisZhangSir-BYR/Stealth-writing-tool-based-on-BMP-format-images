@@ -27,16 +27,16 @@ pip install pycryptodome
 ```bash
 python stego.py hide -i input.bmp -d secret.txt -o output.bmp
 ```
-python stego_bmp/stego.py hide -i pic-01.bmp -d text.txt  -o output-01.bmp
+
 #### 提取数据
 ```bash
 python stego.py extract -i output.bmp -o extracted_secret.txt
 ```
-python stego_bmp/stego.py extract -i output-01.bmp -o extracted_secret.txt
+
 #### 分析容量
 ```bash
 python stego.py analyze -i input.bmp
-python stego_bmp/stego.py analyze -i pic-01.bmp
+
 ```
 
 ### 增强版 
@@ -45,27 +45,27 @@ python stego_bmp/stego.py analyze -i pic-01.bmp
 ```bash
 # 不加密
 python enhanced_stego.py hide -i input.bmp -d secret.txt -o output.bmp
-python stego_bmp/enhanced_stego.py hide -i pic-01.bmp -d text.txt -o output-02.bmp
+
 # 使用密码加密
 python enhanced_stego.py hide -i pic-01.bmp -d text.txt -o output-02.bmp -p PasswordJavis
-python stego_bmp/enhanced_stego.py hide -i pic-02.bmp -d text.txt -o output-03.bmp -p javis
+
 ```
 
 #### 提取数据
 ```bash
 # 从未加密的图像中提取
 python enhanced_stego.py extract -i output.bmp -o extracted_secret.txt
-python stego_bmp/enhanced_stego.py extract -i output-02.bmp -o extracted_secret-01.txt
+
 
 # 从加密的图像中提取
 python enhanced_stego.py extract -i output.bmp -o extracted_secret.txt -p your_password
-python stego_bmp/enhanced_stego.py extract -i output-03.bmp -o extracted_secret-02.txt -p javis
+
 ```
 
 #### 分析容量
 ```bash
 python enhanced_stego.py analyze -i input.bmp
-python stego_bmp/enhanced_stego.py analyze -i pic-02.bmp
+
 ```
 
 ## 隐写原理
