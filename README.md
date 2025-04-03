@@ -1,0 +1,1 @@
+# Stealth-writing-tool-based-on-BMP-format-images
